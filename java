@@ -1,7 +1,7 @@
 {
   "about": {
     "browser": "chrome",
-    "version": "21.2.1"
+    "version": "22.2.1"
   },
   "showall": true,
   "lang": "en",
@@ -10,26 +10,27 @@
   "tabtitle": "",
   "greeting": "Hung",
   "greetingsize": "3",
+  "greetingsmode": "auto",
   "pagegap": 0,
   "pagewidth": 2200,
   "time": true,
   "main": true,
   "dateformat": "auto",
-  "quicklinks": true,
-  "textShadow": 0,
-  "announcements": "all",
+  "quicklinks": false,
+  "textShadow": 0.325,
+  "announcements": "off",
   "review": -1,
-  "css": "#time, #weather{color: #f0f0f0}\n",
+  "css": "#time, #weather{color: #ffffff}",
   "hide": {
     "clock": false,
-    "date": false,
+    "date": true,
     "greetings": true,
     "settingsicon": true,
     "weatherdesc": false,
     "weathericon": true
   },
   "clock": {
-    "size": 1.625,
+    "size": 2.125,
     "ampm": false,
     "analog": false,
     "seconds": true,
@@ -42,14 +43,15 @@
   "linkbackgrounds": false,
   "linknewtab": false,
   "linksrow": "16",
+  "linkiconradius": "0.8",
   "linkgroups": {
     "on": true,
     "selected": "Social",
     "groups": [
       "Productivity",
       "Social",
-      "Trading",
       "AI tools",
+      "Trading",
       "Shopping",
       "Music",
       "film",
@@ -63,20 +65,26 @@
     "type": "files",
     "fadein": 1200,
     "blur": 0,
-    "bright": 1,
+    "bright": 0.59,
     "frequency": "pause",
     "color": "#185A63",
     "urls": "",
     "images": "unsplash-images-search",
-    "videos": "pixabay-videos-search",
+    "videos": "bonjourr-videos-daylight",
+    "mute": true,
     "queries": {
       "unsplash-images-collections": "LU0xO5Xqm2M"
     },
     "texture": {
-      "type": "none"
+      "type": "grain",
+      "opacity": 0.05,
+      "size": 140
     }
   },
   "worldclocks": [
+    {
+      "timezone": "Asia/Ho_Chi_Minh"
+    },
     {
       "timezone": "Asia/Ho_Chi_Minh"
     }
@@ -100,19 +108,25 @@
     "fcHigh": 17,
     "fcLast": 1699365600
   },
+  "greetingscustom": {
+    "morning": "",
+    "afternoon": "",
+    "evening": "",
+    "night": ""
+  },
   "notes": {
     "on": true,
-    "background": "#fff0",
-    "width": 36,
     "opacity": 0,
+    "background": "#fff0",
+    "width": 46,
     "align": "left",
-    "text": "thọc làm nhạc remix cho bài all mine love gì đó"
+    "text": "[ ] tìm hiểu cách chế máy đọc sách\n\n[ ] học vẽ mạch\n\n[ ] tìm hiểu cái github: soxoj\rmaigret\n\n[ ] tạo IG đăng các suy nghĩ riêng ( từ claude)"
   },
   "searchbar": {
     "on": false,
+    "opacity": 0,
     "background": "#fff0",
     "width": 36,
-    "opacity": 0,
     "newtab": false,
     "suggestions": true,
     "engine": "default",
@@ -124,11 +138,31 @@
     "type": "user",
     "frequency": "day",
     "author": true,
-    "last": 1764512898380,
+    "last": 1782670344085,
     "userlist": " \n\n\n\n"
   },
+  "pomodoro": {
+    "on": false,
+    "mode": "pomodoro",
+    "pause": 1781023008742,
+    "end": 1781024427192,
+    "timeFor": {
+      "pomodoro": 2700,
+      "break": 300,
+      "longbreak": 900
+    },
+    "focus": false,
+    "sound": true,
+    "history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
   "font": {
-    "size": "14",
+    "size": "13.2",
     "family": "Montserrat",
     "system": false,
     "weightlist": [
@@ -147,6 +181,7 @@
   "supporters": {
     "enabled": true,
     "closed": true,
+    "closedMonth": 12,
     "month": 8
   },
   "move": {
@@ -199,15 +234,12 @@
           ],
           [
             "notes"
-          ],
-          [
-            "quicklinks"
           ]
         ],
         "items": {
           "time": {
             "text": "",
-            "box": "baseline center"
+            "box": "center"
           },
           "main": {
             "text": "right",
@@ -219,13 +251,17 @@
           },
           "notes": {
             "text": "",
-            "box": "center"
+            "box": "end center"
           },
           "searchbar": {
             "text": "center",
             "box": "end center"
           },
           "quotes": {
+            "text": "",
+            "box": "center"
+          },
+          "pomodoro": {
             "text": "",
             "box": "center"
           }
@@ -308,11 +344,14 @@
     "parent": "AI tools",
     "title": "ChatGPT",
     "url": "https://chatgpt.com/",
-    "icon": "https://i.pinimg.com/736x/d7/f8/2b/d7f82b61067ff83e8050a42ffea96d60.jpg"
+    "icon": {
+      "type": "url",
+      "value": "https://i.pinimg.com/736x/d7/f8/2b/d7f82b61067ff83e8050a42ffea96d60.jpg"
+    }
   },
   "linksbmfqfj": {
     "_id": "linksbmfqfj",
-    "order": 7,
+    "order": 6,
     "parent": "AI tools",
     "title": "Gemini",
     "url": "https://gemini.google.com/app"
@@ -330,13 +369,6 @@
     "parent": "Music",
     "title": "Spotify",
     "url": "https://open.spotify.com/"
-  },
-  "linkscbjpok": {
-    "_id": "linkscbjpok",
-    "order": 6,
-    "parent": "AI tools",
-    "title": "LMArena",
-    "url": "https://lmarena.ai/"
   },
   "linksdccpda": {
     "_id": "linksdccpda",
@@ -358,7 +390,10 @@
     "parent": "Trading",
     "title": "exness",
     "url": "https://my.exness.com/webtrading/",
-    "icon": "1758262896051"
+    "icon": {
+      "type": "auto",
+      "value": "https://services.bonjourr.fr/favicon/blob/https://my.exness.com/webtrading/?r=1758262896051"
+    }
   },
   "linksejgebq": {
     "_id": "linksejgebq",
@@ -366,7 +401,10 @@
     "parent": "Social",
     "title": "Pinterest",
     "url": "https://www.pinterest.com/",
-    "icon": "https://api.bonjourr.fr/favicon/blob/https://www.pinterest.com/"
+    "icon": {
+      "type": "url",
+      "value": "https://api.bonjourr.fr/favicon/blob/https://www.pinterest.com/"
+    }
   },
   "linkseojgmc": {
     "_id": "linkseojgmc",
@@ -402,7 +440,10 @@
     "parent": "AI tools",
     "title": "Claude",
     "url": "https://claude.ai/new",
-    "icon": "https://th.bing.com/th/id/OIP.Vo4zytrzwGweRICCSeP_iQHaHa?rs=1&pid=ImgDetMain"
+    "icon": {
+      "type": "url",
+      "value": "https://th.bing.com/th/id/OIP.Vo4zytrzwGweRICCSeP_iQHaHa?rs=1&pid=ImgDetMain"
+    }
   },
   "linkshbplco": {
     "_id": "linkshbplco",
@@ -413,7 +454,7 @@
   },
   "linkshrqkpb": {
     "_id": "linkshrqkpb",
-    "order": 8,
+    "order": 7,
     "parent": "AI tools",
     "title": "NotebookLM",
     "url": "https://notebooklm.google.com/?icid=home_maincta"
@@ -424,7 +465,9 @@
     "parent": "Trading",
     "title": "Tradingview",
     "url": "https://www.tradingview.com/chart/ATdkYgAN/?symbol=OANDA%3AXAUUSD",
-    "icon": "https://services.bonjourr.fr/favicon/blob/https://www.tradingview.com/chart/ATdkYgAN/"
+    "icon": {
+      "type": "auto"
+    }
   },
   "linksjkgdhd": {
     "_id": "linksjkgdhd",
@@ -432,7 +475,9 @@
     "parent": "AI tools",
     "title": "AI studio",
     "url": "https://aistudio.google.com/prompts/new_chat",
-    "icon": "https://services.bonjourr.fr/favicon/blob/https://aistudio.google.com/prompts/new_chat"
+    "icon": {
+      "type": "auto"
+    }
   },
   "linkskcokdd": {
     "_id": "linkskcokdd",
@@ -454,7 +499,10 @@
     "parent": "Social",
     "title": "Instagram",
     "url": "https://www.instagram.com/",
-    "icon": "1728290485435"
+    "icon": {
+      "type": "auto",
+      "value": "https://services.bonjourr.fr/favicon/blob/https://www.instagram.com/?r=1728290485435"
+    }
   },
   "linksmbfhog": {
     "_id": "linksmbfhog",
@@ -462,7 +510,10 @@
     "parent": "Social",
     "title": "Facebook",
     "url": "https://www.facebook.com/",
-    "icon": "1728290476977"
+    "icon": {
+      "type": "auto",
+      "value": "https://services.bonjourr.fr/favicon/blob/https://www.facebook.com/?r=1728290476977"
+    }
   },
   "linksnhheca": {
     "_id": "linksnhheca",
@@ -491,7 +542,9 @@
     "parent": "Study",
     "title": "Microsoft team",
     "url": "https://teams.microsoft.com/v2/",
-    "icon": "https://services.bonjourr.fr/favicon/blob/https://teams.microsoft.com/v2/"
+    "icon": {
+      "type": "auto"
+    }
   },
   "linksoijkra": {
     "_id": "linksoijkra",
@@ -499,7 +552,10 @@
     "parent": "Social",
     "title": "Threads",
     "url": "https://www.threads.net/",
-    "icon": "1728290493445"
+    "icon": {
+      "type": "auto",
+      "value": "https://services.bonjourr.fr/favicon/blob/https://www.threads.net/?r=1728290493445"
+    }
   },
   "linkspcipnn": {
     "_id": "linkspcipnn",
@@ -507,7 +563,10 @@
     "parent": "Social",
     "title": "Youtube",
     "url": "https://youtube.com",
-    "icon": "1728290488279"
+    "icon": {
+      "type": "auto",
+      "value": "https://services.bonjourr.fr/favicon/blob/https://youtube.com?r=1728290488279"
+    }
   },
   "linksqiakhi": {
     "_id": "linksqiakhi",
