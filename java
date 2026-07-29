@@ -21,7 +21,7 @@
   "main": false,
   "dateformat": "auto",
   "quicklinks": true,
-  "textShadow": 0.325,
+  "textShadow": 1,
   "announcements": "off",
   "review": -1,
   "css": "#time, #weather{color: #ffffff}",
@@ -53,6 +53,7 @@
     "on": true,
     "selected": "Social",
     "groups": [
+      "blank",
       "Productivity",
       "Social",
       "AI tools",
@@ -60,8 +61,7 @@
       "Shopping",
       "Music",
       "film",
-      "Study",
-      "blank"
+      "Study"
     ],
     "pinned": [],
     "synced": []
@@ -121,12 +121,12 @@
     "night": ""
   },
   "notes": {
-    "on": true,
+    "on": false,
     "opacity": 0,
     "background": "#fff0",
     "width": 46,
     "align": "left",
-    "text": "[ ] tìm hiểu cách chế máy đọc sách\n\n[ ] học vẽ mạch\n\n[ ] tìm hiểu cái github: soxoj\rmaigret\n\n[ ] tạo IG đăng các suy nghĩ riêng ( từ claude)\n\n"
+    "text": ""
   },
   "searchbar": {
     "on": false,
@@ -144,7 +144,7 @@
     "type": "user",
     "frequency": "day",
     "author": true,
-    "last": 1782670344085,
+    "last": 1785345035314,
     "userlist": " \n\n\n\n"
   },
   "pomodoro": {
@@ -159,9 +159,14 @@
     },
     "focus": false,
     "sound": true,
-    "volume": "marimba",
+    "volume": 0.7,
     "alarm": "marimba",
     "history": [
+      {},
+      {},
+      {},
+      {},
+      {},
       {},
       {},
       {},
@@ -223,13 +228,10 @@
       "single": {
         "grid": [
           [
-            "time"
-          ],
-          [
             "quotes"
           ],
           [
-            "notes"
+            "time"
           ],
           [
             "quicklinks"
@@ -240,29 +242,9 @@
             "text": "",
             "box": "center"
           },
-          "main": {
-            "text": "right",
-            "box": "baseline end"
-          },
           "quicklinks": {
-            "text": "center",
-            "box": "center"
-          },
-          "notes": {
             "text": "",
             "box": "end center"
-          },
-          "searchbar": {
-            "text": "center",
-            "box": "end center"
-          },
-          "quotes": {
-            "text": "",
-            "box": "center"
-          },
-          "pomodoro": {
-            "text": "",
-            "box": "center"
           }
         }
       },
