@@ -1,7 +1,11 @@
 {
   "about": {
     "browser": "chrome",
-    "version": "22.2.1"
+    "version": "22.3.0"
+  },
+  "advanced": {
+    "altMode": true,
+    "escKey": true
   },
   "showall": true,
   "lang": "en",
@@ -14,9 +18,9 @@
   "pagegap": 0,
   "pagewidth": 2200,
   "time": true,
-  "main": true,
+  "main": false,
   "dateformat": "auto",
-  "quicklinks": false,
+  "quicklinks": true,
   "textShadow": 0.325,
   "announcements": "off",
   "review": -1,
@@ -35,6 +39,7 @@
     "analog": false,
     "seconds": true,
     "ampmlabel": false,
+    "ampmposition": "top-left",
     "worldclocks": false,
     "timezone": "auto"
   },
@@ -77,7 +82,7 @@
     },
     "texture": {
       "type": "grain",
-      "opacity": 0.05,
+      "opacity": 0.02,
       "size": 140
     }
   },
@@ -99,6 +104,7 @@
   "weather": {
     "city": "City",
     "unit": "metric",
+    "show_unit": false,
     "provider": "",
     "moreinfo": "none",
     "forecast": "always",
@@ -120,7 +126,7 @@
     "background": "#fff0",
     "width": 46,
     "align": "left",
-    "text": "[ ] tìm hiểu cách chế máy đọc sách\n\n[ ] học vẽ mạch\n\n[ ] tìm hiểu cái github: soxoj\rmaigret\n\n[ ] tạo IG đăng các suy nghĩ riêng ( từ claude)"
+    "text": "[ ] tìm hiểu cách chế máy đọc sách\n\n[ ] học vẽ mạch\n\n[ ] tìm hiểu cái github: soxoj\rmaigret\n\n[ ] tạo IG đăng các suy nghĩ riêng ( từ claude)\n\n"
   },
   "searchbar": {
     "on": false,
@@ -153,6 +159,8 @@
     },
     "focus": false,
     "sound": true,
+    "volume": "marimba",
+    "alarm": "marimba",
     "history": [
       {},
       {},
@@ -162,20 +170,11 @@
     ]
   },
   "font": {
+    "color": "#ffffff",
     "size": "13.2",
     "family": "Montserrat",
     "system": false,
-    "weightlist": [
-      "100",
-      "200",
-      "300",
-      "400",
-      "500",
-      "600",
-      "700",
-      "800",
-      "900"
-    ],
+    "weightlist": [],
     "weight": "100"
   },
   "supporters": {
@@ -224,9 +223,6 @@
       "single": {
         "grid": [
           [
-            "main"
-          ],
-          [
             "time"
           ],
           [
@@ -234,6 +230,9 @@
           ],
           [
             "notes"
+          ],
+          [
+            "quicklinks"
           ]
         ],
         "items": {
